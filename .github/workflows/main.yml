@@ -13,4 +13,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '14.x'
-    - run: node index.js
+    - name: Update README.md
+      run: node index.js > README.md
+    - name: Commit change & Push
+      run: |
+          git config user.name 'liununu'
+          git config user.email ${{ secrets.EMAIL }}
+          git commit -am "bot: update README.md automatically"
+          git push
