@@ -9,7 +9,7 @@ function generateProgressBar() {
     const passedProgressBarIndex = parseInt(progressOfThisYear * progressBarCapacity)
     const passedProgressBar = Array.from({length: passedProgressBarIndex}, _ => '█')
     const leftProgressBar = Array.from({length: progressBarCapacity - passedProgressBarIndex}, _ => '▁')
-    return `{${passedProgressBar.concat(leftProgressBar).join('')}}`
+    return `{ ${passedProgressBar.concat(leftProgressBar).join('')} }`
 }
 
 const readme = `\
