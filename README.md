@@ -1,9 +1,9 @@
 ### Hi there 👋
 
-⏳ Year progress { ███████████████████████▁▁▁▁▁▁▁ } 76.98 %
+⏳ Year progress { ███████████████████████▁▁▁▁▁▁▁ } 77.05 %
 
 ---
 
-⏰ Updated on Thu, 08 Oct 2020 18:10:20 GMT
+⏰ Updated on Fri, 09 Oct 2020 00:27:24 GMT
 
 ![Progress Bar CI](https://github.com/liununu/liununu/workflows/Progress%20Bar%20CI/badge.svg)
