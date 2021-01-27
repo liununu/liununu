@@ -7,10 +7,9 @@ const progressBarOfThisYear = generateProgressBar()
 function generateProgressBar() {
     const progressBarCapacity = 30
     const passedProgressBarIndex = parseInt(progressOfThisYear * progressBarCapacity)
-    const progressBar = Array(progressBarCapacity)
-        .fill('▁')
-        .map((value, index) => index < passedProgressBarIndex ? '█' : value)
-        .join('')
+    const progressBar =
+        '&#9601;'.repeat(passedProgressBarIndex) +
+        '&block;'.repeat(progressBarCapacity - passedProgressBarIndex)
     return `{ ${progressBar} }`
 }
 
