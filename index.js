@@ -1,3 +1,5 @@
+const {cyan} = require('chalk')
+
 // the current year
 const year = new Date().getFullYear()
 
@@ -16,7 +18,11 @@ const createProgressBar = () => {
         .fill('.')
         .map((value, index) => index < progressBarIndex ? '█' : value)
         .join('')
-    return `[${progressBar}]`
+
+    const consoleOutput = `[${progressBar}] ${(progress * 100).toFixed(2)}` 
+    console.log(cyan(consoleOutput))
+
+    return consoleOutput
 
 }
 // █
