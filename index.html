@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Year progress</title>
+    <title>Time progress</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Time progress</h1>
     <input type="number" placeholder="Length"></input>
-    <button onclick="displayPrograssBar()">Submit</button>
-    <p></p>
+    <div id="features">
+        <div class="column">
+            <h2>Year progress</h2>
+            <p id="year"></p>
+            <h2>Month progress</h2>
+            <p id="month"></p>
+            <h2>Day progress</h2>
+            <p id="day"></p>
+            <h2>Minute progress</h2>
+            <p id="minute"></p>
+        </div>
+
+        <div class="column">
+            <h2>Season progress</h2>
+            <p id="season"></p>
+            <h2>Week progress</h2>
+            <p id="week"></p>
+            <h2>Hour progress</h2>
+            <p id="hour"></p>
+            <h2>Second progress</h2>
+            <p id="second"></p>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

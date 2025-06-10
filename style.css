@@ -1,0 +1,72 @@
+body{
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+#features{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+input{
+  margin-top: 15px;
+  background-color: #1e1e1e;
+  color: #ffff;
+  border: solid;
+  border-width: 0.01em;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 1.5em;
+  width: 10;
+}
+
+#features {
+    display: flex;
+    gap: 10px; /* Уменьшаем расстояние между колонками */
+    justify-content: center; /* Центрируем колонки */
+    max-width: 800px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрируем блок на странице */
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    min-width: 0; /* Исправляем возможные проблемы с переполнением */
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+p{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+h1{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+h2{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+label{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
