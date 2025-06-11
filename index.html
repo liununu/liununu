@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Time progress</h1>
+    <div id="features">
+        <div class="column">
+            <h2>Year progress</h2>
+            <p id="year"></p>
+            <h2>Month progress</h2>
+            <p id="month"></p>
+            <h2>Day progress</h2>
+            <p id="day"></p>
+            <h2>Minute progress</h2>
+            <p id="minute"></p>
+        </div>
+
+        <div class="column">
+            <h2>Season progress</h2>
+            <p id="season"></p>
+            <h2>Week progress</h2>
+            <p id="week"></p>
+            <h2>Hour progress</h2>
+            <p id="hour"></p>
+            <h2>Second progress</h2>
+            <p id="second"></p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <input type="number" placeholder="Length" size="5"></input>
+    <label>Progress bar length </label> <br>
+
+    <input type="checkbox" id="comments" checked="checked" class="inpcheckbox"> </input><label class="checkbox"> Comments under progress bars</label> <br>
+    <input type="checkbox" id="percentage" checked="checked" class="inpcheckbox"> </input><label class="checkbox"> Percentage format</label>
+
+    <br><br><br>
+
+    <h1>Time to percentages</h1>
+    <input type="number" size="5" id="year-inp"> <label>Years</label> <br>
+    <input type="number" size="5" id="season-inp"> <label>Seasons</label> <br>
+    <input type="number" size="5" id="month-inp"> <label>Months</label> <br>
+    <input type="number" size="5" id="week-inp"> <label>Weeks</label> <br>
+    <input type="number" size="5" id="day-inp"> <label>Days</label> <br>
+    <input type="number" size="5" id="hour-inp"> <label>Hours</label> <br>
+    <input type="number" size="5" id="minute-inp"> <label>Minutes</label> <br>
+    <input type="number" size="5" id="second-inp"> <label>Seconds</label> <br>
+    <button onclick="convert()">Convert</button>
+    <p id="convert-result"> </p>
+    <h2 id="result"></h2>
+
+    <h1>Percentages to time</h1>
+    <input type="number" size="5" id="perc-inp"> <label>%</label> <br>
+
+    <button onclick="percConvert()">Convert</button>
+    <p id="perc-convert-result"> </p>
+    <div id="perc-result"></div>
+
+    <script src="index.js"></script>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+body{
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+#features{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#settings{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#checkbox{
+  color: #ffff
+}
+
+input{
+  margin-top: 15px;
+  background-color: #1e1e1e;
+  color: #ffff;
+  border: solid;
+  border-width: 0.01em;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 1.5em;
+  width: 100px;
+}
+
+#features {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    min-width: 0;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;       /* Отключаем стандартный стиль */
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #1b1b1b;    /* Фон невыбранного */
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: #1b1b1b;    /* Фон выбранного */
+}
+
+/* Возвращаем стандартную галочку */
+input[type="checkbox"]:checked::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: currentColor; /* Цвет галочки берётся из `color` */
+  mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") center no-repeat;
+}
+
+p{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+h1{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+h2{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+label{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+button{
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #1b1b1b;
+    border-color: #ffffff;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border-width: 0.01em;
+    border-radius: 5px;
+    border: solid;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+button:hover{
+    color: #1b1b1b;
+    background-color: #ffff;
+    border-color: #ffff;
+}
