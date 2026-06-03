@@ -1,0 +1,10 @@
+{
+  "name": "liununu",
+  "version": "1.0.0",
+  "description": "Year progress bar generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}
